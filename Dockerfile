@@ -12,4 +12,7 @@ RUN pip install --upgrade --no-cache-dir \
 RUN mkdir ~/.config/
 COPY flake8 ~/.config/flake8
 
-ENTRYPOINT flake8
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT /entrypoint.sh
