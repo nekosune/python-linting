@@ -1,0 +1,9 @@
+name: 'Python Linting'
+description: 'An opinionated action to enforce a sane set of python linting rules.'
+author: 'Hugo Osvaldo Barrera <hugo@barrera.io> | WhyNotHugo'
+branding:
+  color: 'orange'
+  icon: 'check-circle'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
