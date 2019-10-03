@@ -13,6 +13,12 @@ steps:
 - uses: whynothugo/python-linting@master
 ```
 
+## Configuration
+
+This repository will include default flake8 settings at a user level, so any
+project using this can include any extra values by just using `setup.cfg` as
+usual.
+
 ## License
 
 The code in this project is released under the [ISC Licence](LICENCE).
