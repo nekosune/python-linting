@@ -4,13 +4,21 @@ An opinionated action to enforce a sane set of python linting rules.
 
 ## Usage
 
-Inside your `.github/workflows/linting.yml` file ass:
+Inside your `.github/workflows/linting.yml` file add:
 
 ```yaml
-steps:
-- uses: actions/checkout@master
-- uses: actions/setup-python@v1
-- uses: whynothugo/python-linting@master
+name: Linting
+
+on: [push]
+
+jobs:
+  styles:
+    runs-on: ubuntu-18.04
+    name: Linting
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-python@v1
+      - uses: whynothugo/python-linting@mastersteps:
 ```
 
 ## Configuration
