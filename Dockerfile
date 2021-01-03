@@ -6,7 +6,8 @@ ENV PYTHONUNBUFFERED 1
 RUN pip install --upgrade --no-cache-dir \
   flake8 \
   flake8-bugbear \
-  flake8-comprehensions
+  flake8-comprehensions \
+  flake8-docstrings
 
 RUN mkdir ~/.config/
 COPY flake8 ~/.config/flake8
